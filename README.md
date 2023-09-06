@@ -29,6 +29,10 @@ After collecting the information of all the pictures and setting the parameter i
 
 `./recreate_sample_3.0.py` is to generate the training set based on the information recorded from the previous sampling.
 
+`./voc_annotation_medical.py` is to generate txt for the training set.
+
+`./train_medical.py` is for training. The weights files will be saved in `./logs/`. If you want to change where the weights file is stored, check out `./utils/utils_fit.py/`.
+
 ## 3. Citation
 ```
 @misc{li2023singleimagebased,
