@@ -33,6 +33,10 @@ After collecting the information of all the pictures and setting the parameter i
 
 `./train_medical.py` is for training. The weights files will be saved in `./logs/`. If you want to change where the weights file is stored, check out `./utils/utils_fit.py/`.
 
+The path to save the final segmented mask can be modified in `./unet.py`. After running `./predict.py`, intuitive segmented image will be saved in `./img_out/`.
+
+
+
 ## 3. Citation
 ```
 @misc{li2023singleimagebased,
