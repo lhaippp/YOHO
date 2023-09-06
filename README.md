@@ -13,7 +13,7 @@ The test set for EEC-2022 can be found on: [EEC-2022](https://drive.google.com/f
 - Examples of ROI plots are shown in Figure 1. The white area (grey value of 255) is ROI, which is the range where the sample is located. Most of the time the sampled area is focal tissue (the first row of the examples), but for some images, where the extent of the lesion is more than 50% to 60% of the map, the normal tissue area is segmented, i.e., the ROI was chosen to be within the normal tissue area (the second row of the examples). One of the more obvious features of such images is that the four corners are white (grey value of 255). For such images, since the segmentation is the normal organisation, it is sufficient to take the complement of the final segmentation result.
 
 <p align="center">
-    <img src="illustrative_figure/ROI_example.png"/> <br />
+    <img src="illustrative_figure/ROI_example.png"/ width="50%" height="50%"> <br />
     <em> 
     Figure 1. Examples of ROI plots.
     </em>
