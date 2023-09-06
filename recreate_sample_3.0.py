@@ -24,18 +24,26 @@ args = parser.parse_args()
 n = args.png_name
 
 path_pic = "./img/"
-p_name = n + ".png"  # Update
+p_name = n + ".png"  
+
+# Saved sampling information
 save_sample_path = "../EEC_save_sample_13.0/"
 path_sor = save_sample_path + n + "/nms/"
 path_lab = save_sample_path + n + "/source/"
-path_msk = "../Dataset/EEC/EEC_test_dataset_label/" + n + ".png"  # Update
-path_m_sor = "./seg/source_train/"
-path_m_lab = "./seg/sample/"
+
+# ROI
+path_msk = "../Dataset/EEC/EEC_test_dataset_label/" + n + ".png"  
+
+# Trainning set
 path_train = "./Medical_Datasets/Images/"
 path_gt = "./Medical_Datasets/Labels/"
-# Edge
-path_m_eg = "./seg/label/"
 path_egt = "./Medical_Datasets/edges/"
+
+# Intermediate generation of information
+path_m_sor = "./seg/source_train/"
+path_m_lab = "./seg/sample/"
+path_m_eg = "./seg/label/"
+
 
 
 class Label:

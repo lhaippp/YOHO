@@ -21,18 +21,20 @@ import os
 
 n = str(30)
 
-path_pic = r"G:\one_shot_project\dataset\EEC\EEC\test/"
-p_name = n + ".png"  # 需要更新
+path_pic = "../EEC/test/"
+p_name = n + ".png"
+
+# Saved sampling information  
 save_sample_path = (
-    r"G:\one_shot_project\Experiment data\Experiment preparation\EEC_save_optimize6/"
+    "../EEC/EEC_save_sampling_information/"
 )
 path_sor = save_sample_path + n + "/nms/"
 path_lab = save_sample_path + n + "/source/"
 
-path_m_sor = r"G:\one_shot_project\seg\source_train/"
-path_m_lab = r"G:\one_shot_project\seg\sample/"
-# 新增边缘
-path_m_eg = r"G:\one_shot_project\seg\label/"
+# Intermediate generation of information
+path_m_sor = "../Seg/source_train/"
+path_m_lab = "../Seg/sample/"
+path_m_eg = "../Seg/label/"
 
 
 
