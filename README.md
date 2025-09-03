@@ -2,6 +2,8 @@
 
 The test set for EEC-2022 can be found on: [EEC-2022](https://drive.google.com/file/d/1NeuGRLbicY2awAUW44uQl6BMu8S5feVy/view?usp=sharing) under the MIT License.
 
+The full dataset for EEC-2022 could be found here: [Link](https://drive.google.com/file/d/1hBHj4dy_dESjmq496TbZpLYXKIpnrSww/view?usp=drive_link)
+
 ## 1. Preface
 - Paper is available at [https://arxiv.org/abs/2306.05912](https://arxiv.org/abs/2306.05912).
 
