@@ -2,6 +2,23 @@
 
 The test set for EEC-2022 can be found on: [EEC-2022](https://drive.google.com/file/d/1NeuGRLbicY2awAUW44uQl6BMu8S5feVy/view?usp=sharing) under the MIT License.
 
+The full dataset for EEC-2022 could be found here: [Link](https://drive.google.com/file/d/1hBHj4dy_dESjmq496TbZpLYXKIpnrSww/view?usp=drive_link)
+
+## 0. Early Esophageal Cancer (EEC) Segmentation Data Description
+All gastroscopy image data were acquired using Olympus GIF-Q290 and GIF-Q260 electronic gastroscopes. 
+
+The collected gastroscopy images include resolutions of: 1920 px × 1080 px, 768 px × 576 px, and 480 px × 360 px (in this dataset, cropped original images have been uniformly resized to 480×480; users may adjust dimensions according to their network capabilities). 
+
+Non-EEC cases overlap with EEC cases, meaning non-EEC images were acquired from the non-EEC esophageal mucosa of EEC patients. Acquisition and use of the EEC (Early Esophageal Cancer) dataset were approved by the Ethics Committees of West China Hospital, Sichuan University and the University of Electronic Science and Technology of China. All cases obtained patient informed consent.
+
+Images were annotated by experienced specialists. Ground truth (mask) uses pixel 0 for background and 1 for EEC, appearing entirely black. The non-EEC mask can be entirely 0 and may be created independently. Non-EEC images should be randomly assigned to the train, val, or test sets.
+
+Data Details:
+The train, val, and test datasets were randomly partitioned under the constraint that images from the same patient appear only in the same dataset. Do not perform further random splits on the data. If redistributing datasets is necessary, trace images from the same patient using EEC image filenames. For example, ‘2ESTD1jhx201492000OR.png’ and ‘2ESTD1jhx201492004OR.png’ are gastroscopy images from the same patient.
+
+Image naming convention: 0.png-1299.png denote non-EEC images; all others are EEC images.
+
+
 ## 1. Preface
 - Paper is available at [https://arxiv.org/abs/2306.05912](https://arxiv.org/abs/2306.05912).
 
